@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -10,21 +10,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f2f5;
+  background-color: #fefefe;
 }
 
 /* Персиковая карточка */
 .card-container {
-  width: 700px;
-  height: 400px;
-  background: #EE8D6D;
-  border-radius: 16px;
+  width: 750px;
+  height: 420px;
+  background: #EE8D6D; /* Персиковый цвет как на скриншоте */
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   position: relative;
+  overflow: hidden;
 }
 
 /* Персонаж */
@@ -37,14 +38,14 @@ body {
 }
 
 .character-img {
-  max-height: 300px;
+  max-height: 320px;
   object-fit: contain;
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
 }
 
 .card-container:hover .character-img {
-  transform: translateY(-8px);
+  transform: translateY(-5px) scale(1.02);
 }
 
 /* Секция формы */
@@ -57,14 +58,14 @@ body {
 
 .form-section h2 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 6px;
   color: #ffffff;
 }
 
 .form-section .subtitle {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 25px;
   line-height: 1.4;
 }
@@ -80,7 +81,7 @@ body {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #888;
+  color: #999;
   font-size: 14px;
 }
 
@@ -104,7 +105,7 @@ body {
 .submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: #EF4747;
+  background-color: #EF4747; /* Красный цвет кнопки */
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -121,12 +122,12 @@ body {
 }
 
 .submit-btn:active {
-  transform: scale(0.98);
+  transform: scale(0.99);
 }
 
 /* Футер внизу формы */
 .footer-links {
-  margin-top: 25px;
+  margin-top: 30px;
   text-align: right;
 }
 
